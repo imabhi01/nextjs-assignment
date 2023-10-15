@@ -1,35 +1,22 @@
 "use client";
-import axios from "axios";
 import Link from "next/link";
 import React, {useState} from "react";
-import {useRouter} from "next/navigation";
-import NavBar from '@/components/Navbar/NavBar'
 import SideBar from '@/components/Sidebar/SideBar'
-import Footer from '@/components/Footer/Footer'
+import Content from '@/components/Content/Content'
+import Header from '@/components/Header/Header'
 
 export default function Home() {
-  const router = useRouter()
-  const logout = async () => {
-    try {
-      await axios.get('/api/users/logout')
-      alert('Logout successful')
-      router.push('/login')
-    } catch (error:any) {
-      console.log(error.message);
-    }
-  }
-
   return (
     <div>
-      <NavBar></NavBar>
-      <SideBar></SideBar>
-      <Footer></Footer>
-      <p>Content</p>
-      <p>Footer</p>
-      <button
-        onClick={logout}
-        className="bg-blue-500 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        >Logout</button>
+      <Header></Header>
+      <div className="w-full bg-gray">
+        <div className="grid">
+          <div className="flex">
+            <SideBar></SideBar>
+            <Content></Content>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
