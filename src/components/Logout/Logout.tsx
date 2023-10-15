@@ -18,7 +18,7 @@ export default function Logout(){
         <> 
             <button 
                 onClick={() => logout()}
-                className="px-2 py-2 border-none rounded-md button-color text-white"
+                className="px-2 py-2 border-none rounded-md button-color text-white text-sm"
             >
                 Logout
             </button>

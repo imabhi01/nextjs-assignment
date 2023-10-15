@@ -19,9 +19,9 @@ export default function Header(){
                     <p className='px-2 text-white text-xs'>MORE</p>
                 </div>
 
-                <div className='flex items-center justify-center'>
-                    <input className='w-96 border-none placeholder-white px-2 py-2 opacity-5 bg-black rounded-md text-white text-xs' type="text" placeholder='Enter your search here' />
-                    <FaMagnifyingGlass className='opacity-5' />
+                <div className='flex items-center justify-center search-box'>
+                    <input className='md:w-96 border-none placeholder-white px-2 py-2 opacity-5 bg-black rounded-md text-white md:text-md' type="text" placeholder='Enter your search here' />
+                    <FaMagnifyingGlass className='opacity-5 search-icon md:text-sm' />
                 </div>
                 <div>
                     <Logout></Logout>

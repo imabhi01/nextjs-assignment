@@ -28,6 +28,17 @@ body{
     background: #fff;
 }
 
+.search-box{
+    position: relative;
+}
+
+.search-icon{
+    position: absolute;
+    top: 35%;
+    right: 0;
+    margin-right: 15px;
+}
+
 /* .sidebar{
     background: bg-slate-100;
 } */
