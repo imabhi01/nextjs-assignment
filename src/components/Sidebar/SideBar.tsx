@@ -1,45 +1,43 @@
 import { BsLaptop } from "react-icons/bs";
-import { BsFillPersonFill } from "react-icons/bs";
-import { BsPersonXFill } from "react-icons/bs";
-import { BsStarFill } from "react-icons/bs";
-import { BsXDiamondFill } from "react-icons/bs";
-import { BsFillBasket3Fill } from "react-icons/bs";
-import { FaUserNinja } from "react-icons/fa6";
-import { FaRegStar } from "react-icons/fa6";
+import { BsPerson } from "react-icons/bs";
+import { BsPersonX } from "react-icons/bs";
+import { BsStar } from "react-icons/bs";
+import { BsXDiamond } from "react-icons/bs";
+import { BsBasket3 } from "react-icons/bs";
 
 export default async function Sidebar(){
     return (
         <>
             <div className="sidebar">
-                <div className="w-20 shadow-md bg-gray">
-                    <div className="flex flex-col items-center bg-slate-100 px-3 py-3 active:bg-violet-700 active hover: bg-gray">
+                <div className="w-20 shadow-md bg-white">
+                    <div className="flex flex-col items-center px-3 py-3 icon-class">
                         <div className="text-2xl">
-                            <BsLaptop className="text-gray hover: text-white"/>
+                            <BsLaptop className="text-black hover:text-white icon"/>
                         </div>
                     </div> 
-                    <div className="flex flex-col items-center bg-slate-100 px-3 py-3 active:bg-violet-700">
+                    <div className="flex flex-col items-center px-3 py-3 icon-class">
                         <div className="text-2xl">
-                            <BsFillPersonFill className="text-gray hover: text-white"/>
+                            <BsPerson className="text-black hover:text-white icon"/>
                         </div>
                     </div> 
-                    <div className="flex flex-col items-center bg-slate-100 px-3 py-3 active:bg-violet-700">
+                    <div className="flex flex-col items-center px-3 py-3 icon-class">
                         <div className="text-2xl">
-                            <BsPersonXFill className="text-gray hover: text-white"/>
+                            <BsPersonX className="text-black hover:text-white icon"/>
                         </div>
                     </div> 
-                    <div className="flex flex-col items-center bg-slate-100 px-3 py-3 active:bg-violet-700">
+                    <div className="flex flex-col items-center px-3 py-3 icon-class">
                         <div className="text-2xl">
-                            <BsStarFill className="text-gray hover: text-white"/>
+                            <BsStar className="text-black hover:text-white icon"/>
                         </div>
                     </div> 
-                    <div className="flex flex-col items-center bg-slate-100 px-3 py-3 active:bg-violet-700">
+                    <div className="flex flex-col items-center px-3 py-3 icon-class">
                         <div className="text-2xl">
-                            <BsXDiamondFill className="text-gray hover: text-white"/>
+                            <BsXDiamond className="text-black hover:text-white icon"/>
                         </div>
                     </div> 
-                    <div className="flex flex-col items-center bg-slate-100 px-3 py-3 active:bg-violet-700">
+                    <div className="flex flex-col items-center px-3 py-3 icon-class">
                         <div className="text-2xl">
-                            <BsFillBasket3Fill className="text-gray hover: text-white"/>
+                            <BsBasket3 className="text-black hover:text-white icon"/>
                         </div>
                     </div> 
                 </div>
