@@ -13,10 +13,12 @@ export default function Header(){
                         <HiMenuAlt1 />
                         {/* <BiLogoMicrosoft /> */}
                     </div>
-                    <p className='px-2 text-white text-base'>SAMPLE PAGE</p>
-                    <p className='px-2 text-white text-xs'>HOME</p>
-                    <p className='px-2 text-white text-xs'>FEATURES</p>
-                    <p className='px-2 text-white text-xs'>MORE</p>
+                    <div className='flex flex-row invisible lg:visible'>
+                        <p className='px-2 text-white text-base'>SAMPLE PAGE</p>
+                        <p className='px-2 text-white text-xs'>HOME</p>
+                        <p className='px-2 text-white text-xs'>FEATURES</p>
+                        <p className='px-2 text-white text-xs'>MORE</p>
+                    </div>
                 </div>
 
                 <div className='flex items-center justify-center search-box'>
