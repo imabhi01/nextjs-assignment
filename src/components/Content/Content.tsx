@@ -102,13 +102,8 @@ export default function Content(){
                         <p className='text-sm px-2 py-2 ml-10'>1 year Ago</p>
                         <p className='text-md px-2 py-2 ml-0 pb-5'>Hello Everyone!</p>
                         <hr />
-                        <div className="flex justify-between m-2">
-                            <Image
-                                src="/profile/profile.png"
-                                width={50}
-                                height={50}
-                                alt="Picture of the author"
-                            />
+                        <div className="flex justify-between m-2 items-center">
+                            <h2 className="text-lg">&#128516;</h2>
                             <div className='flex'>
                                 <p className='px-2 py-2'>0 Comments</p>
                                 <p className='px-2 py-2'>0 Shares</p>
@@ -130,13 +125,8 @@ export default function Content(){
                         <p className='text-sm px-2 py-2 ml-10'>1 year Ago</p>
                         <p className='text-md px-2 py-2 ml-0 pb-5'>Hello Everyone!</p>
                         <hr />
-                        <div className="flex justify-between m-2">
-                            <Image
-                                src="/profile/profile.png"
-                                width={50}
-                                height={50}
-                                alt="Picture of the author"
-                            />
+                        <div className="flex justify-between m-2 items-center">
+                            <h2 className="text-lg">&#128516;</h2>
                             <div className='flex'>
                                 <p className='px-2 py-2'>0 Comments</p>
                                 <p className='px-2 py-2'>0 Shares</p>

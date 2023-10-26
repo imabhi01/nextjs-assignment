@@ -7,11 +7,12 @@ export default function Logout(){
     const router = useRouter()
     function logout(){
         try {
-            axios.get('/api/users/logout')
-            toast.success('Successfully logged out!')
-            router.push('/login')
+            axios.get('/api/users/logout').then(async() => {
+                toast.success('Successfully logged out!')
+                router.push('/login');
+            });
         } catch (error:any) {
-            console.log(error.message);
+            toast.error(error.message);
         }
     }
 

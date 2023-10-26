@@ -19,9 +19,11 @@ export default function LoginPage() {
     const onLogin = async () => {
         try {
             setLoading(true);
-            const response = await axios.post("/api/users/login", user);
-            toast.success('Logged in Successfully!')
-            router.push("/");
+            const response = await axios.post("/api/users/login", user)
+            .then(() => {
+                toast.success('Logged in Successfully!')
+                router.push("/");
+            });
         } catch (error:any) {
             toast.success('Logged failed!' + error.message);
         } finally{
@@ -43,12 +45,12 @@ export default function LoginPage() {
                 position="top-center"
                 reverseOrder={false}
             />
-            <div className="w-1/2 p-4 flex flex-col bg-white shadow-md px-10 py-10 m-10">
-                <h1 className="text-lg text-center mb-4">{loading ? "Processing" : "Login"}</h1>
+            <div className="w-1/3 p-4 flex flex-col bg-white rounded-md shadow-md px-10 py-10 m-10">
+                <h1 className="text-lg text-center mb-4">{loading ? "Processing" : "LOGIN"}</h1>
                 
                 <label htmlFor="email">Email</label>
                 <input 
-                className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
+                className="p-2 border border-gray-300 rounded-lg mb-4 text-black"
                     id="email"
                     type="text"
                     value={user.email}
@@ -57,7 +59,7 @@ export default function LoginPage() {
                     />
                 <label htmlFor="password">Password</label>
                 <input 
-                className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
+                className="p-2 border border-gray-300 rounded-lg mb-4 text-black"
                     id="password"
                     type="password"
                     value={user.password}
@@ -66,8 +68,8 @@ export default function LoginPage() {
                     />
                     <button
                     onClick={onLogin}
-                    className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600">Login here</button>
-                    <Link href="/signup">Visit Signup page</Link>    
+                    className="p-2 border border-gray-300 rounded-lg mb-4">SIGN IN</button>
+                    <Link href="/signup" className="text-center underline hover:text-gray">VISIT SIGN UP PAGE</Link>    
             </div>        
             
         </div>
