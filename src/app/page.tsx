@@ -4,10 +4,15 @@ import React, {useState} from "react";
 import SideBar from '@/components/Sidebar/SideBar'
 import Content from '@/components/Content/Content'
 import Header from '@/components/Header/Header'
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Home() {
   return (
     <div>
+      <Toaster
+        position="top-center"
+        reverseOrder={false}
+      />
       <Header></Header>
       <div className="w-full bg-gray">
         <div className="grid">

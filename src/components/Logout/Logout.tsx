@@ -1,13 +1,14 @@
 'use client'
 import axios from 'axios'
 import {useRouter} from "next/navigation"; 
+import toast from 'react-hot-toast'
 
 export default function Logout(){
     const router = useRouter()
     function logout(){
         try {
             axios.get('/api/users/logout')
-            alert('Logout successful')
+            toast.success('Successfully logged out!')
             router.push('/login')
         } catch (error:any) {
             console.log(error.message);
