@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Content(){
     return(
-        <div className="w-full">
+        <div className="w-full max-w-screen-xl mx-auto">
             <div className="grid grid-cols-1">
                 <div className="flex justify-center overflow-hidden">
                     <div className="relative w-full h-32 rounded-md px-10 py-10 m-4">
@@ -83,7 +83,7 @@ export default function Content(){
                             <p>All Updates</p>
                             <div className='flex relative'>
                                 <select name="filter" id="" className='w-full px-2 py-2 rounded-md border-gray-300' placeholder='Everything'>
-                                    <option value="1" selected>Everything</option>
+                                    <option value="1">Everything</option>
                                 </select>
                             </div>
                         </div>

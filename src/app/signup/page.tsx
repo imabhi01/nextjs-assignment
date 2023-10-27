@@ -32,7 +32,6 @@ export default function SignupPage() {
                 router.push("/login");
             });
         } catch (error:any) {
-            console.log(error.status)
             if(error.code === 'ERR_BAD_RESPONSE'){
                 toast.error("Signup failed!");
             };
